@@ -58,16 +58,26 @@
     flex: 70%;
 }
 
-
-.footer{
-  height: 250px;
-  background-color: darkkhaki;
-  margin-bottom: auto;
+footer {
+  background-color: beige;
+  border-top: 1px solid grey;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.follow{
+.left{
+  text-align: left;
+  margin-top: 0%;
+  flex: 50%;
+  padding-left: 40px;
+  margin-bottom: 60px;
+}
+
+.right{
   text-align: right;
-  text-decoration-color: black;
+  margin-top: 0%;
+  flex: 50%;
+  padding-right: 40px;
+ 
 }
 
 img {
