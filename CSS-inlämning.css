@@ -1,15 +1,18 @@
+body{
+  margin:0px;
+  margin-left: 200px;
+
+}
+
 .header{
-    padding: 80px;
+    padding: 40px;
     text-align: center;
     background: darkkhaki;
     color: black;
     font-size: 30px;
-    height: 200px;
+    height: 300px;
     width: 100%;
-    top: 0;
-    left: 0;
 }
-
 
 
 .sidenav {
@@ -39,10 +42,7 @@
   }
   
  
-  .main {
-    margin-left: 160px; 
-    padding: 0px 10px;
-  }
+ 
 
 #intro p {
     column-count: 2;
@@ -63,4 +63,15 @@
 
 .main {
     flex: 70%;
+}
+
+.footer{
+  height: 250px;
+  background-color: darkkhaki;
+  margin-bottom: auto;
+}
+
+.follow{
+  text-align: right;
+  text-decoration-color: black;
 }
