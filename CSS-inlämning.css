@@ -1,0 +1,20 @@
+#intro p {
+    column-count: 2;
+    column-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.side {
+    flex: 30%;
+}
+
+.main {
+    flex: 70%;
+}
