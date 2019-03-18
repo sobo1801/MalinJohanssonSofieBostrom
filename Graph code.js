@@ -7153,7 +7153,8 @@ var jsonString =
     "last_modified": "2016-05-13 00:25:25.368373"
   }];
 
-
+//Skapa ett scatterplott för pris vs reviews
+//Skapar först listor för varje axel där vi lagrar datan från JSON-filen
 var list_x = [];
 var list_y = [];
 for (i=0; i < jsonString.length; i++) {
