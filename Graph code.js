@@ -7218,4 +7218,47 @@ var histo1Layout = {
 
 Plotly.newPlot('histo1', histo1List, histo1Layout)
 
+
+/* Histogram 2 - Ett histogram som visar spridningen på antalet gäster (accommodates) */
+var accommodates = [];
+for (var i = 0; i < jsonString.length; i ++) {
+	accommodates.push(jsonString[i].accommodates);
+}
+
+var guest = {
+    x: accommodates,
+    type: 'histogram',
+  };
+var accommo = [guest];
+
+var accommoLayout = {
+  bargap: 0.05, 
+  bargroupgap: 0.2, 
+  barmode: "overlay", 
+  title: "Count of Accommodates", 
+  xaxis: {title: "Accommodates"}, 
+  yaxis: {title: "Count"},
+  height: 400,
+  width: 400
+};
+Plotly.newPlot('histo2', accommo, accommoLayout);
+
+
 /* Pie-chart - Ett pie chart som visar andel procent av varje typ av rum ”room_type” har av det totala antalen objekt. */
+var rooms = [];
+for (i=0; i < jsonString.length; i++) {
+  rooms.push(jsonString[i].room_type);
+};
+
+var pie = [{
+  labels: rooms,
+  type: 'pie'
+}];
+
+var pieLayout = {
+  title: "Percent of each room type",
+  height: 400,
+  width: 400
+};
+
+Plotly.newPlot('pieChart', pie, pieLayout);
