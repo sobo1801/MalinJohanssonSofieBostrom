@@ -7199,15 +7199,17 @@ for (var i = 0; i < jsonString.length; i++) {
 
 var histo1 = {
   x: histoPrice,
-  type: 'histogram'
+  type: 'histogram',
+  xbins: {
+    start: 0,
+    end: 800,
+    size: 133.33
+  }
 };
 
 var histo1List = [histo1];
 
 var histo1Layout = {
-  bargap: 0.05, 
-  bargroupgap: 0.2, 
-  barmode: "overlay", 
   title: "Fördelning hyrespriser", 
   xaxis: {title: "Hyrespriser"}, 
   yaxis: {title: "Antal"},
@@ -7228,18 +7230,20 @@ for (var i = 0; i < jsonString.length; i ++) {
 var guest = {
     x: accommodates,
     type: 'histogram',
+    xbins: {
+      start: 0,
+      end: 16,
+      size: 3
+    }
   };
 var accommo = [guest];
 
 var accommoLayout = {
-  bargap: 0.05, 
-  bargroupgap: 0.2, 
-  barmode: "overlay", 
   title: "Count of Accommodates", 
   xaxis: {title: "Accommodates"}, 
   yaxis: {title: "Count"},
   height: 400,
-  width: 400
+  width: 600
 };
 Plotly.newPlot('histo2', accommo, accommoLayout);
 
@@ -7258,7 +7262,7 @@ var pie = [{
 var pieLayout = {
   title: "Percent of each room type",
   height: 400,
-  width: 400
+  width: 600
 };
 
 Plotly.newPlot('pieChart', pie, pieLayout);
