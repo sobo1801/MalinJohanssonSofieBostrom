@@ -7178,4 +7178,8 @@ var layout = {
   }
 }
 
-Plotly.newPlot('myDiv', data, layout);
+Plotly.newPlot('scatter', data, layout);
+
+
+
+/* Pie-chart - Ett pie chart som visar andel procent av varje typ av rum ”room_type” har av det totala antalen objekt. */
