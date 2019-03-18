@@ -7163,7 +7163,7 @@ for (i=0; i < jsonString.length; i++) {
 };
 
 
-var trace1 = {
+var scatter = {
   x: list_x,
   y: list_y,
   mode: 'markers',
@@ -7171,16 +7171,52 @@ var trace1 = {
 };
 
 
-var data = [trace1];
-var layout = {
+var scatterList = [scatter];
+var scatterLayout = {
+  title: {
+    text:'Pris vs reviews',
+    font: 'Courier New'
+  },
   xaxis: {
-    range: []
-  }
+    title: 'Pris'
+  },
+  yaxis: {
+    title: 'Reviews'
+  },
+  width: 600,
+  height: 400
 }
 
-Plotly.newPlot('scatter', data, layout);
+Plotly.newPlot('scatter', scatterList, scatterLayout);
+
+//Histogram1 över spridningen för hyrespriserna
+//Alla hyrespriserna behöver sparas i en lista för att kunna ladda in det i diagrammet
+
+var histoPrice = []
+for (var i = 0; i < jsonString.length; i++) {
+  histoPrice.push(jsonString[i].price);
+}
+
+var histo1 = {
+  x: histoPrice,
+  type: 'histogram'
+};
+
+var histo1List = [histo1];
+
+var histo1Layout = {
+  bargap: 0.05, 
+  bargroupgap: 0.2, 
+  barmode: "overlay", 
+  title: "Fördelning hyrespriser", 
+  xaxis: {title: "Hyrespriser"}, 
+  yaxis: {title: "Antal"},
+  width: 600,
+  height: 400
+};
 
 
+Plotly.newPlot('histo1', histo1List, histo1Layout)
 
 
 /* Histogram 2 - Ett histogram som visar spridningen på antalet gäster (accommodates) */
