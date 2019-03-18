@@ -7200,7 +7200,9 @@ var accommoLayout = {
   barmode: "overlay", 
   title: "Count of Accommodates", 
   xaxis: {title: "Accommodates"}, 
-  yaxis: {title: "Count"}
+  yaxis: {title: "Count"},
+  height: 400,
+  width: 400
 };
 Plotly.newPlot('histo2', accommo, accommoLayout);
 
@@ -7217,8 +7219,9 @@ var pie = [{
 }];
 
 var pieLayout = {
+  title: "Percent of each room type",
   height: 400,
-  width: 500
+  width: 400
 };
 
-Plotly.newPlot('pie-chart', pie, pieLayout);
+Plotly.newPlot('pieChart', pie, pieLayout);
