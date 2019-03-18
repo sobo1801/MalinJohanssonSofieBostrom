@@ -7174,14 +7174,14 @@ var scatter = {
 var scatterList = [scatter];
 var scatterLayout = {
   title: {
-    text:'Pris vs reviews',
+    text:'Pris vs Recensioner',
     font: 'Courier New'
   },
   xaxis: {
     title: 'Pris'
   },
   yaxis: {
-    title: 'Reviews'
+    title: 'Antal recensioner'
   },
   //width: 600,
   //height: 400
@@ -7210,7 +7210,10 @@ var histo1 = {
 var histo1List = [histo1];
 
 var histo1Layout = {
-  title: "Fördelning hyrespriser", 
+  title: {
+    text: "Fördelning hyrespriser", 
+    font: 'Courier New'
+  },
   xaxis: {title: "Hyrespriser"}, 
   yaxis: {title: "Antal"},
   //width: 600,
@@ -7239,9 +7242,12 @@ var guest = {
 var accommo = [guest];
 
 var accommoLayout = {
-  title: "Count of Accommodates", 
-  xaxis: {title: "Accommodates"}, 
-  yaxis: {title: "Count"},
+  title: {
+    text: "Spridning antalet gäster", 
+    font: 'Courier New',
+  },
+  xaxis: {title: "Gäster"}, 
+  yaxis: {title: "Antal"},
   //height: 400,
   //width: 600
 };
@@ -7256,13 +7262,16 @@ for (i=0; i < jsonString.length; i++) {
 
 var pie = [{
   labels: rooms,
-  type: 'pie'
+  type: 'pie',
 }];
 
 var pieLayout = {
-  title: "Percent of each room type",
+  title: {
+    text: "Andel % av varje rumtyp",
+    font: 'Courier New',
+  },
   //height: 400,
-  //width: 600
+  //width: 6000
 };
 
 Plotly.newPlot('pieChart', pie, pieLayout);
