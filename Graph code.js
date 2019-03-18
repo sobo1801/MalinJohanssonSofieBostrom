@@ -7183,8 +7183,8 @@ var scatterLayout = {
   yaxis: {
     title: 'Reviews'
   },
-  width: 600,
-  height: 400
+  //width: 600,
+  //height: 400
 }
 
 Plotly.newPlot('scatter', scatterList, scatterLayout);
@@ -7213,8 +7213,8 @@ var histo1Layout = {
   title: "Fördelning hyrespriser", 
   xaxis: {title: "Hyrespriser"}, 
   yaxis: {title: "Antal"},
-  width: 600,
-  height: 400
+  //width: 600,
+  //height: 400
 };
 
 
@@ -7242,8 +7242,8 @@ var accommoLayout = {
   title: "Count of Accommodates", 
   xaxis: {title: "Accommodates"}, 
   yaxis: {title: "Count"},
-  height: 400,
-  width: 600
+  //height: 400,
+  //width: 600
 };
 Plotly.newPlot('histo2', accommo, accommoLayout);
 
@@ -7261,8 +7261,8 @@ var pie = [{
 
 var pieLayout = {
   title: "Percent of each room type",
-  height: 400,
-  width: 600
+  //height: 400,
+  //width: 600
 };
 
 Plotly.newPlot('pieChart', pie, pieLayout);
