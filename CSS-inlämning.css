@@ -44,12 +44,6 @@ body {
     color: lightgrey;
   }
 
-footer {
-  background-color: whitesmoke;
-  border-top: 1px solid grey;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
 
 .left{
   text-align: left;
