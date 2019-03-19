@@ -5,18 +5,19 @@
 <head>
   <meta charset="utf-8">
   <title>Airbnb</title>
-  <link rel="stylesheet" type="text/css" href="./CSS-inlämning.css">
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./CSS-inlämning.css">  <!--Länk till css-koden-->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    <!--Länk till plotly CNS, för att få in de senaste diagrammen-->
 </head>
         
 <body> 
-  <div class="header" id="start">
-    <h1><span style="color: darkred">Airbnb</span></h1>
+  <div class="header">
+    <h1><span style="color: darkred">Airbnb</span></h1>   <!-- rubriken i header-->
 
-    <p><span style="font-variant: small-caps">Boka unika boenden och upplevelser.</span></p>  
+    <p><span style="font-variant: small-caps"> - Visualisering för beslutsstöd - </span></p>  <!-- underrubrik i header-->
 
   </div>
-        
+  
+  <!--Meny på vänster sida-->
   <div class="sidenav">
     <a href="#scatter">Scatterplot</a><br />
     <a href="#histo1">Histogram 1</a><br />
@@ -25,28 +26,33 @@
   </div>
 
   <br /><br />
+
+  <!-- Första raden med två diagram, som ska ligga sida vid sida-->
   <div class="row">
     <div class="column">
-      <div id="scatter" class="diagram"><!-- Scatterplot will be drawn inside this DIV --></div>
+      <div id="scatter" class="diagram"></div>    <!-- Scatterplot -->
     </div>
     <br />
     <div class="column">
-      <div id="histo1" class="diagram"><!-- Histogram 1 chart will be drawn inside this DIV --></div>
+      <div id="histo1" class="diagram"></div>     <!-- Histogram 1 -->
     </div>
   </div>
   <br /><br />
+
+  <!-- Andra raden med två diagram, som ska ligga sida vid sida -->
   <div class="row">
     <div class="column">  
-      <div id="histo2" class="diagram"><!-- histogram 2 chart will be drawn inside this DIV --></div>
+      <div id="histo2" class="diagram"></div>     <!-- Histogram 2 -->
     </div>
     <div class="column">
-      <div id="pieChart" class="diagram"><!-- Pie chart will be drawn inside this DIV --></div>
+      <div id="pieChart" class="diagram"></div>   <!-- Pie chart -->
+
     </div>
   </div>
   <br /><br />
 
 </body>
-<script src="./Graph code.js"></script>    
+<script src="./Graph code.js"></script>    <!--koppling till javascriptet. -->
 </html>
 
 
