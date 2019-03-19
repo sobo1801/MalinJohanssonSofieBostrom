@@ -7184,12 +7184,12 @@ var scatterLayout = {
     title: 'Antal recensioner'
   },
 }
-
+//skickar in variabler i diagrammet.
 Plotly.newPlot('scatter', scatterList, scatterLayout);
 
 //Histogram1 över spridningen för hyrespriserna
 //Alla hyrespriserna behöver sparas i en lista för att kunna ladda in det i diagrammet
-
+//Hämtar data från jsonString, för att göra en array över price med variabel histoprice
 var histoPrice = []
 for (var i = 0; i < jsonString.length; i++) {
   histoPrice.push(jsonString[i].price);
@@ -7215,17 +7215,17 @@ var histo1Layout = {
   xaxis: {title: "Hyrespriser"}, 
   yaxis: {title: "Antal"},
 };
-
-
+//skickar in variabler i diagrammet.
 Plotly.newPlot('histo1', histo1List, histo1Layout)
 
 
 /* Histogram 2 - Ett histogram som visar spridningen på antalet gäster (accommodates) */
+//Hämtar data från jsonString, för att göra en array över accommodates med variabel accommodates
 var accommodates = [];
 for (var i = 0; i < jsonString.length; i ++) {
 	accommodates.push(jsonString[i].accommodates);
 }
-
+//Definerar diagrammets uppbyggnad
 var guest = {
     x: accommodates,
     type: 'histogram',
@@ -7236,7 +7236,7 @@ var guest = {
     }
   };
 var accommo = [guest];
-
+//layouten i diagrammet
 var accommoLayout = {
   title: {
     text: "Fördelning av antalet gäster per bokning", 
@@ -7245,26 +7245,28 @@ var accommoLayout = {
   xaxis: {title: "Gäster"}, 
   yaxis: {title: "Antal"},
 };
+//skickar in variabler i diagrammet.
 Plotly.newPlot('histo2', accommo, accommoLayout);
 
 
 /* Pie-chart - Ett pie chart som visar andel procent av varje typ av rum ”room_type” har av det totala antalen objekt. */
+//Hämtar data från jsonString, för att göra en array över room_type med variabel rooms
 var rooms = [];
 for (i=0; i < jsonString.length; i++) {
   rooms.push(jsonString[i].room_type);
 };
-
+//Definerar pie
 var pie = [{
   labels: rooms,
   type: 'pie',
 }];
-
+//layouten i diagrammet
 var pieLayout = {
   title: {
     text: "% Fördelning av rumstyper",
     font: 'Courier New'
   },
 };
-
+//skickar in variabler i diagrammet.
 Plotly.newPlot('pieChart', pie, pieLayout);
 
