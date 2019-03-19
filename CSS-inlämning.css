@@ -13,6 +13,7 @@ body {
     color: black;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
     border-bottom: 1px solid gray;
     width: 100%;
 }
@@ -44,35 +45,6 @@ body {
     color: lightgrey;
   }
 
-footer {
-  background-color: whitesmoke;
-  border-top: 1px solid grey;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-.left{
-  text-align: left;
-  margin-top: 0%;
-  flex: 50%;
-  padding-left: 40px;
-  margin-bottom: 60px;
-}
-
-.right{
-  text-align: right;
-  margin-top: 0%;
-  flex: 50%;
-  padding-right: 40px;
- 
-}
-
-img {
-  float: right;
-  overflow: auto;
-}
-
-
 
 .diagram {
   height: 400px;
@@ -80,11 +52,18 @@ img {
   border: 1px solid grey
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
+
+.left {
+  width: 50%;
+  
 }
 
-* {
-  box-sizing: border-box;
+.right {
+  width: 50%;
+  
+}
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
 }

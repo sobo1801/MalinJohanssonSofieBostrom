@@ -7183,8 +7183,6 @@ var scatterLayout = {
   yaxis: {
     title: 'Antal recensioner'
   },
-  //width: 600,
-  //height: 400
 }
 
 Plotly.newPlot('scatter', scatterList, scatterLayout);
@@ -7211,13 +7209,11 @@ var histo1List = [histo1];
 
 var histo1Layout = {
   title: {
-    text: "Fördelning hyrespriser", 
+    text: "Fördelning av hyrespriser per bokning", 
     font: 'Courier New'
   },
   xaxis: {title: "Hyrespriser"}, 
   yaxis: {title: "Antal"},
-  //width: 600,
-  //height: 400
 };
 
 
@@ -7243,13 +7239,11 @@ var accommo = [guest];
 
 var accommoLayout = {
   title: {
-    text: "Spridning antalet gäster", 
+    text: "Fördelning av antalet gäster per bokning", 
     font: 'Courier New',
   },
   xaxis: {title: "Gäster"}, 
   yaxis: {title: "Antal"},
-  //height: 400,
-  //width: 600
 };
 Plotly.newPlot('histo2', accommo, accommoLayout);
 
@@ -7267,11 +7261,10 @@ var pie = [{
 
 var pieLayout = {
   title: {
-    text: "Andel % av varje rumtyp",
-    font: 'Courier New',
+    text: "% Fördelning av rumstyper",
+    font: 'Courier New'
   },
-  //height: 400,
-  //width: 6000
 };
 
 Plotly.newPlot('pieChart', pie, pieLayout);
+

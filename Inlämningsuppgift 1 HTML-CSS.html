@@ -12,7 +12,7 @@
 <body> 
   <div class="header" id="start">
     <h1><span style="color: darkred">Airbnb</span></h1>
-    <p><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Boka unika boenden och upplevelser.</span></p>  
+    <p><span style="font-variant: small-caps">Boka unika boenden och upplevelser.</span></p>  
   </div>
         
   <div class="sidenav">
@@ -20,48 +20,28 @@
     <a href="#scatter">Scatterplot</a><br />
     <a href="#histo1">Histogram 1</a><br />
     <a href="#histo2">Histogram 2</a><br />
-    <a href="#pieChart">Pie-Chart</a><br />
-    <a href="#kontakt">Kontakta oss</a>
+    <a href="#pieChart">Pie-Chart</a>
   </div>
 
   <br /><br />
-    <h2><span Style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: darkslategray">Scatterplot</span></h2>
-    <div id="scatter" class="diagram"></div> 
-    <br /><br />
-
-    <h2><span Style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: darkslategray">Histogram 1</span></h2> 
-     <div id="histo1" class="diagram"></div>
-      <br /><br />
-     
-  <h2><span Style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: darkslategray">Histogram 2</span></h2>
-    <div id="histo2" class="diagram"><!-- histogram 2 chart will be drawn inside this DIV -->
+  <div class="row">
+    <div class="left">
+      <div id="scatter" class="diagram"><!-- Scatterplot will be drawn inside this DIV --></div>
     </div>
-    <br /><br />  
-
-  <h2><span Style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: darkslategray">Pie chart</span></h2>
-      <div id="pieChart" class="diagram"><!-- Pie chart will be drawn inside this DIV -->
-      </div>
-
-
-<br /><br />
-
-  <footer>
-    <div class="row">       
-      <div class="left" id="kontakt">
-        <p><strong>Kontakta oss:</strong></p>
-          <p>Airbnb AB</p>
-          <p>xxxxx-xxx</p>
-          <p>Påhittad gata xx, xxx xx Stockholm</p>
-          <p>info.airbnb@mail.com</p>
-      </div>                  
-      <div class="right">
-        <h5>Följ oss på:</h5>
-         <a href="https://twitter.com/" target="_blank"><img src="https://webbdagarna.se/wp-content/uploads/2017/10/Twitter-logga.png" alt="Kan ej visas" hspace="5px" height="40" width="40"></a>
-         <a href="https://facebook.com/" target="_blank"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Kan ej visas" hspace="5px" height="40" width="40"></a></a>
-         <a href="https://linkedin.com/" target="_blank"><img src="https://anderslindh.files.wordpress.com/2014/01/linkedin-logo.png" alt="Kan ej visas" hspace="5px" height="40" width="40"></a></a>
-       </div>
-     </div>
-  </footer>
+    <div class="right">
+      <div id="histo1" class="diagram"><!-- Histogram 1 chart will be drawn inside this DIV --></div>
+    </div>
+  </div>
+  <br /><br />
+  <div class="row">
+    <div class="left">  
+      <div id="histo2" class="diagram"><!-- histogram 2 chart will be drawn inside this DIV --></div>
+    </div>
+    <div class="right">
+      <div id="pieChart" class="diagram"><!-- Pie chart will be drawn inside this DIV --></div>
+    </div>
+  </div>
+  <br /><br />
 </body>
 <script src="./Graph code.js"></script>    
 </html>
