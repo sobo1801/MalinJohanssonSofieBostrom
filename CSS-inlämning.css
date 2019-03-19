@@ -27,7 +27,6 @@ body {
 
 .column {
   width: 50%;
-  float: left;
 }
 
 
@@ -36,8 +35,6 @@ body {
     width: 100%;
   }
 }
-
-
 
  .row {
     display: flex;
