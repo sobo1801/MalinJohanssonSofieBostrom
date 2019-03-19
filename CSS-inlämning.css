@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-  margin-left: 200px;
   background-color: whitesmoke;
   padding-left: 40px;
   padding-right: 80px;
@@ -17,33 +16,6 @@ body {
     border-bottom: 1px solid gray;
     width: 100%;
 }
-
-.sidenav {
-    height: 100%; 
-    width: 200px;
-    position: fixed; 
-    z-index: 1; 
-    top: auto; 
-    left: 0;
-    background-color: whitesmoke; 
-    overflow-x: hidden; 
-    padding-top: 60px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    color: rgb(39, 42, 46);
-    display: block;
-  }
-  
-  
-  .sidenav a:hover {
-    color: lightgrey;
-  }
 
 
 .diagram {
