@@ -49,22 +49,29 @@ body {
 .diagram {
   height: 400px;
   width: 600px;
-  border: 1px solid grey
+  border: 1px solid grey;
 }
 
 
-.left {
-  flex: 50%;
-  float: left;  
+.column {
+  width: 50%;
+  float: left;
 }
 
-.right {
-  flex: 50%;
-  float: right;
-  
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
 }
 
-  .row {
+
+
+ .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+* {
+  box-sizing: border-box;
 }
